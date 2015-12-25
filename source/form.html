@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Form-pink</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="container">
@@ -27,41 +28,63 @@
           <h2 class="form-itroduce__title">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
           </h2>
-          <label class="form-label"  for="">Имя <span class="form-label__required">*</span></label>
-          <input class="form-input"  type="text">
-          <label class="form-label"  for="">Фамилия <span class="form-label__required">*</span></label>
-          <input class="form-input"  type="text" >
-          <label class="form-label" for="" >Отчество</label>
-          <input class="form-input" type="text" >
+          <div class="input-wrap">
+            <label class="form-label"  for="">Имя <span class="form-label__required">*</span></label>
+            <input class="form-input"  type="text">
+          </div>
+          <div class="input-wrap">
+            <label class="form-label"  for="">Фамилия <span class="form-label__required">*</span></label>
+            <input class="form-input"  type="text" >
+          </div>
+          <div class="input-wrap">
+            <label class="form-label" for="">Отчество</label>
+            <input class="form-input" type="text">
+          </div>
         </div>
         <div class="form-travel">
           <h2 class="form-title">С каким приложением путешествовали? <span class="form-label__required">*</span></h2>
-          <input class="form-radio"  type="radio" checked name="travel">
-          <label class="label-radio" for="" >Pink для iOS</label>
-          <input class="form-radio"  type="radio" name="travel">
-          <label class="label-radio" for="" >Pink на Android</label>
-          <input class="form-radio" type="radio"  name="travel">
-          <label class="label-radio" for="" >Windows Phone</label>
+          <ul class="radio-list">
+            <li class="radio-list__item">
+              <input class="form-radio"  type="radio" checked name="travel">
+              <label class="label-radio" for="" >Pink для iOS</label>
+            </li>
+            <li class="radio-list__item">
+              <input class="form-radio"  type="radio" name="travel">
+              <label class="label-radio" for="" >Pink на Android</label>
+            </li>
+            <li class="radio-list__item">
+              <input class="form-radio" type="radio"  name="travel">
+              <label class="label-radio" for="" >Windows Phone</label>
+            </li>
+          </ul>
         </div>
         <div class="travel-date">
           <h2 class="form-title">Когда вы путешествовали? <span class="form-label__required">*</span></h2>
-          <input class="form-input" type="text"  placeholder="1 апреля 2015">
-          <label class="form-label" for="" >Дата выезда</label>
-          <div class="counter">
-            <a href="" class="counter__btn counter__btn-minus"></a>
-            <input  class="counter__input" type="text" value="10 дней">
-            <a href="" class="counter__btn counter__btn--plus"></a>
+          <div class="input-wrap">
+            <input class="form-input" type="text"  placeholder="1 апреля 2015">
+            <label class="form-label" for="">Дата выезда</label>
           </div>
-          <label for="" class="form-label">Продолжительность</label>    
-          <input type="text" class="form-input form-input--dark" placeholder="1 апреля 2015">
-          <label for="" class="form-label">Дата Возвращения</label>
+          <div class="input-wrap">
+            <div class="counter">
+              <a href="" class="counter__btn counter__btn-minus"></a>
+              <input  class="counter__input" type="text" value="10 дней">
+              <a href="" class="counter__btn counter__btn--plus"></a>
+            </div>
+            <label for="" class="form-label">Продолжительность</label> 
+          </div>
+          <div class="input-wrap">
+            <input type="text" class="form-input form-input--dark" placeholder="1 апреля 2015">
+            <label for="" class="form-label">Дата Возвращения</label>
+          </div>
         </div>
         <div class="form-amount">
-          <label for="" class="form-label">Количество попутчиков <span class="form-label__required">*</span></label>
-          <div class="counter">
-            <a href="" class="counter__btn counter__btn-minus"></a>
-            <input type="text" class="counter__input" value="2 чел">
-            <a href="" class="counter__btn counter__btn--plus"></a>
+          <div class="input-wrap">
+            <label for="" class="form-label">Количество попутчиков <span class="form-label__required">*</span></label>
+            <div class="counter">
+              <a href="" class="counter__btn counter__btn-minus"></a>
+              <input type="text" class="counter__input" value="2 чел">
+              <a href="" class="counter__btn counter__btn--plus"></a>
+            </div>
           </div>
           <div class="form-amount__item">
             <div class="form-amount__number">
@@ -69,10 +92,14 @@
               <div class="form-number">1</div>
             </div>
             <div class="form-amount__item-description">
-              <label for="" class="form-label">Имя: <span class="form-label__required">*</span></label>
-              <input type="text" class="form-input form-input--white" placeholder="Введите ваше имя">
-              <label for="" class="form-label">Прозвище:</label>
-              <input type="text" class="form-input form-input--white" placeholder="Ну как же без этого!">
+              <div class="input-wrap">
+                <label for="" class="form-label">Имя: <span class="form-label__required">*</span></label>
+                <input type="text" class="form-input form-input--white" placeholder="Введите ваше имя">
+              </div>
+              <div class="input-wrap">
+                <label for="" class="form-label">Прозвище:</label>
+                <input type="text" class="form-input form-input--white" placeholder="Ну как же без этого!">
+              </div>
             </div>
             <div class="form-amount__item">
               <div class="form-amount__number">
@@ -80,28 +107,46 @@
                 <div class="form-number">2</div>
               </div>
               <div class="form-amount__item-description">
-                <label for="" class="form-label">Имя: <span class="form-label__required">*</span></label>
-                <input type="text" class="form-input form-input--white" placeholder="Введите ваше имя">
-                <label for="" class="form-label">Прозвище:</label>
-                <input type="text" class="form-input form-input--white" placeholder="Ну как же без этого!">
+                <div class="input-wrap">
+                  <label for="" class="form-label">Имя: <span class="form-label__required">*</span></label>
+                  <input type="text" class="form-input form-input--white" placeholder="Введите ваше имя">
+                </div>
+                <div class="input-wrap">
+                  <label for="" class="form-label">Прозвище:</label>
+                  <input type="text" class="form-input form-input--white" placeholder="Ну как же без этого!">
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="achievements">
           <h2 class="form-title">Ваши безбашенные достижения в путешествии</h2>
-          <input type="text" class="form-checkbox">
-          <label for="" class="label-checkbox">Сделал селфи с акулой</label>
-          <input type="text" class="form-checkbox">
-          <label for="" class="label-checkbox">Обгорел на пляже</label>
-          <input type="text" class="form-checkbox">
-          <label for="" class="label-checkbox">Видел Чака Норриса</label>
-          <input type="text" class="form-checkbox">
-          <label for="" class="label-checkbox">Накупил сувениров</label>
-          <input type="text" class="form-checkbox">
-          <label for="" class="label-checkbox">Удержал башню</label>
-          <input type="text" class="form-checkbox">
-          <label for="" class="label-checkbox">Разгромил отель</label>
+          <ul class="checkbox-list">
+            <li class="checkbox-list__item">
+              <input type="text" class="form-checkbox">
+              <label for="" class="label-checkbox">Сделал селфи с акулой</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input type="text" class="form-checkbox">
+              <label for="" class="label-checkbox">Обгорел на пляже</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input type="text" class="form-checkbox">
+              <label for="" class="label-checkbox">Видел Чака Норриса</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input type="text" class="form-checkbox">
+              <label for="" class="label-checkbox">Накупил сувениров</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input type="text" class="form-checkbox">
+              <label for="" class="label-checkbox">Удержал башню</label>
+            </li>
+            <li class="checkbox-list__item">
+              <input type="text" class="form-checkbox">
+              <label for="" class="label-checkbox">Разгромил отель</label>
+            </li>
+          </ul>
         </div>
         <div class="form-photos">
           <h2 class="form-title">Ваши фотографии из поездки <span class="form-label__required">*</span></h2>
@@ -173,5 +218,6 @@
       </p>
       <a href="#" class="module-failure-btn">ок</a>
     </div>
+    <script src="js/script.min.js"></script>
 </body>
 </html>
