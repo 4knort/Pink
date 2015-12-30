@@ -1,0 +1,50 @@
+.main-navigation-button{
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  width: 50px;
+  height: 24px;
+  background: url("../img/sprites.png") no-repeat -420px -10px;
+}
+.navigation-button-close{
+  position: absolute;
+  top: 21px;
+  right: 17px;
+  width: 28px;
+  height: 25px;
+  background: none;
+  z-index: 30;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    top: 10px;
+    left: -2px;
+    transform: rotate(45deg);
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    top: 10px;
+    right: 0;
+    transform: rotate(-45deg);
+  }
+}
+
+@media(min-width: @mobile){
+  .main-navigation-button{
+    top: 44px;
+    right: 42px;
+  }
+}
+
+@media(min-width: @tablet){
+  .main-navigation-button{
+    display: none;
+  }
+}

@@ -1,0 +1,89 @@
+.features-item{
+  text-align: center;
+  margin-bottom: 30px;
+  &__title{
+    width: 230px;
+    margin: 0 auto;
+    font-size: @font-18;
+    margin-bottom: 14px;
+  }
+  &__text{
+    width: 275px;
+    margin: 0 auto;
+    color: @blue;
+  }
+}
+
+@media(min-width: @mobile){
+  .features-item{
+    margin-left: 52%;
+    width: 310px;
+    text-align: left;
+    margin-bottom: 32px;
+    &__title{
+      margin: 0;
+      margin-bottom: 14px;
+    }
+    &__text{
+      width: 310px;
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .features-item{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    width: 33%;
+    text-align: center;
+    position: relative;
+    &__title{
+      margin: 0 auto;
+      margin-bottom: 25px;
+      font-size: @font-30;
+      line-height: @line-30;
+    }
+    &__text{
+      font-size: @font-18;
+      line-height: @line-30;
+      width: 245px;
+    }
+    &--grey{
+      &:after{
+        content: "";
+        position: absolute;
+        background: url("../img/Iphone-screen-grey-desk.png") no-repeat;
+        width: 186px;
+        height: 302px;
+        top: -358px;
+        left: 50%;
+        margin-left: -93px;
+      }
+    }
+    &--pink{
+      &:after{
+        content: "";
+        position: absolute;
+        background: url("../img/Iphone-screen-pink-desk.png") no-repeat;
+        width: 186px;
+        height: 302px;
+        top: -358px;
+        left: 50%;
+        margin-left: -93px;
+      }
+    }
+    &--smile{
+      &:after{
+        content: "";
+        position: absolute;
+        background: url("../img/Iphone-screen-pink-smile-desk.png") no-repeat;
+        width: 186px;
+        height: 302px;
+        top: -358px;
+        left: 50%;
+        margin-left: -93px;
+      }
+    }
+  }
+}

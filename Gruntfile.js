@@ -112,7 +112,7 @@ grunt.registerTask("build", [
     "cmq",
     "postcss",
     "cssmin",
-    "imagemin",
+    // "imagemin",
     "concat",
     "uglify"
   ]);

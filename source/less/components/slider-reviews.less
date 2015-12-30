@@ -1,0 +1,152 @@
+.slider-reviews{
+  padding-top: 42px;
+  padding-bottom: 55px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 25px;
+  &__arrow-right{
+    display: none;
+  }
+  &__arrow-left{
+    display: none;
+  }
+  &__item{
+    display: none;
+    &:nth-child(1){
+      display: block;
+    }
+  }
+  &__title{
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: @font-18;
+    line-height: @line-30;
+    &--tablet{
+      display: none;
+    }
+  }
+  &__text{
+    width: 285px;
+    margin: 0 auto;
+    line-height: @line-30;
+    color: @blue;
+  }
+  &__controls{
+    width: 130px;
+    height: 15px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -75px;
+    font-size: 0;
+    &-item{
+      display: inline-block;
+      vertical-align: middle;
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: #bec2c7;
+      margin-right: 10px;
+      cursor: pointer;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+    &-active{
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #fff;
+      border: 3px solid @blue;
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media(min-width: @mobile){
+  .slider-reviews{
+    &__title{
+      width: 500px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      line-height: @line-30;
+      &--mobile{
+        display: none;
+      }
+      &--tablet{
+        display: block;
+      }
+    }
+    &__title-description{
+      display: block;
+      font-size: 13px;
+      color: @blue;
+      font-weight: normal;
+    }
+    &__text{
+      width: 621px;
+      margin-bottom: 35px;
+      font-size: @font-18;
+      line-height: @line-30;
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .slider-reviews{
+    padding-top: 185px;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 50%;
+      margin-left: -40px;
+      width: 79px;
+      height: 64px;
+      background: url("../img/sprites.png") no-repeat -1455px -10px;
+    }
+    &__arrow-right{
+      position: absolute;
+      top: 217px;
+      right: 50%;
+      margin-right: -430px;
+      width: 30px;
+      height: 30px;
+      transform: rotate(-45deg);
+      border-right: 2px solid #c2c6ca;
+      border-bottom: 2px solid #c2c6ca;
+      display: block;
+      cursor: pointer;
+    }
+    &__arrow-left{
+      position: absolute;
+      top: 217px;
+      left: 50%;
+      margin-left: -430px;
+      width: 30px;
+      height: 30px;
+      transform: rotate(135deg);
+      border-right: 2px solid #c2c6ca;
+      border-bottom: 2px solid #c2c6ca;
+      display: block;
+      cursor: pointer;
+    }
+    &__title{
+      font-size: @font-24;
+      line-height: 32px;
+    }
+    &__title-description{
+      font-size: @font-18;
+      line-height: @line-30;
+      font-weight: normal;
+    }
+    &__text{
+      width: 740px;
+    }
+  }
+}

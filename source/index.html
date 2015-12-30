@@ -3,104 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <title>Pink</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div class="container">
     <header class="main-header">
       <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Оставь отзыв</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Блог шерифа</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Гостиницы</a></li>
-        </ul>
-        <a class="main-logo" href="#">Pink</a>
-        <button class="main-navigation-button"></button>
+        <div class="container clearfix">
+          <a class="main-logo" href="#"></a>
+          <button class="main-navigation-button"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--border" href="index.html">Информация</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Блог</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          </ul>
+        </div>
       </nav>
+      <div class="container">
         <h1 class="main-header__title">
           Взгляните на жизнь иначе!
         </h1>
+        <div class="download">
+          <a href="" class="download-btn">Скачать приложение</a>
+          <div class="download-systems">
+            <a href="" class="apple-system"></a>
+            <a href="" class="android-system"></a>
+            <a href="" class="microsoft-system"></a>
+          </div>
+          <p class="download__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </div>
     </header>
     <main class="content">   
-      <div class="download">
-        <a class="download-btn">Скачать приложение</a>
-        <div class="download-systems">
-          <a href="" class="apple-system"></a>
-          <a href="" class="android-system"></a>
-          <a href="" class="microsoft-system"></a>
+      <div class="container">
+        <div class="info">
+          <h2 class="info__title">Устали от серости мегаполиса?</h2>
+          <h2 class="info__title">Нам есть, что вам предложить!</h2>
         </div>
-        <p class="download__text">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </div>
-      <div class="info">
-        <h2 class="info__title">Устали от серости мегаполиса?</h2>
-        <h2 class="info__title">Нам есть, что вам предложить!</h2>
       </div>
       <div class="features">
-        <div class="features-item">
-          <h2 class="features-item__title">Поднимает настроение</h2>
-          <div class="features-item__text">
-            Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
-          </div>
+        <div class="container">
+            <div class="features-item features-item--grey">
+              <h2 class="features-item__title">Поднимает настроение</h2>
+              <p class="features-item__text">
+                Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
+              </p>
+            </div>
+            <div class="features-item features-item--pink">
+              <h2 class="features-item__title">Меняет мир вокруг</h2>
+              <p class="features-item__text">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              </p>
+            </div>
+            <div class="features-item features-item--smile">
+              <h2 class="features-item__title">Заводит новых друзей</h2>
+              <p class="features-item__text">
+                Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </div>
         </div>
-        <div class="features-item">
-          <h2 class="features-item__title">Меняет мир вокруг</h2>
-          <div class="features-item__text">
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-          </div>
-        </div>
-        <div class="features-item">
-          <h2 class="features-item__title">Заводит новых друзей</h2>
-          <div class="features-item__text">
-            Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+      </div>
+      <div class="time-effect clearfix">
+        <div class="container">
+          <div class="time-effect__image">24</div>
+          <div class="time-effect__description">
+            <div class="time-effect__title">
+              Эффект <span class="time-effect__effect">на 24 часа!</span>
+            </div>
+            <div class="time-effect__text">
+              Британские ученые провели исследования
+              и доказали, что положительный эффект
+              от использования приложения длится 
+              целые сутки!
+            </div>
+            <a href="" class="time-effect__link">                
+              Узнать больше об исследовании
+            </a>
           </div>
         </div>
       </div>
-      <div class="slider-reviews">
-        <div class="slider-reviews__item">
-          <h2 class="slider-reviews__title">Николай Петров</h2>
-          <div class="slider-reviews__text">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+      <div class="container">
+        <div class="slider-reviews">
+          <div class="slider-reviews__arrow-left"></div>
+          <div class="slider-reviews__arrow-right"></div>
+          <div class="slides">
+            <div class="slider-reviews__item">
+              <h2 class="slider-reviews__title slider-reviews__title--mobile">Николай Петров</h2>
+              <p class="slider-reviews__text">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </p>
+              <h2 class="slider-reviews__title slider-reviews__title--tablet">Николай Петров<span class="slider-reviews__title-description">25 лет, водитель трамвая</span></h2>
+            </div>
+            <div class="slider-reviews__item">
+              <h2 class="slider-reviews__title slider-reviews__title--mobile"></h2>
+              <p class="slider-reviews__text"></p>
+              <h2 class="slider-reviews__title slider-reviews__title--tablet"></h2>
+            </div>
+            <div class="slider-reviews__item">
+              <h2 class="slider-reviews__title slider-reviews__title--mobile"></h2>
+              <p class="slider-reviews__text"></p>
+              <h2 class="slider-reviews__title slider-reviews__title--tablet"></h2>
+            </div>
           </div>
-        </div>
-        <div class="slider-reviews__item">
-          <h2 class="slider-reviews__title"></h2>
-          <div class="slider-reviews__text"></div>
-        </div>
-        <div class="slider-reviews__item">
-          <h2 class="slider-reviews__title"></h2>
-          <div class="slider-reviews__text"></div>
-        </div>
-        <div class="slider-reviews__controls">
-          <i class="slider-reviews__controls-active"></i>
-          <i></i>
-          <i></i>
+          <div class="slider-reviews__controls">
+            <i class="slider-reviews__controls-active"></i>
+            <i class="slider-reviews__controls-item"></i>
+            <i class="slider-reviews__controls-item"></i>
+          </div>
         </div>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="contacts">
-        <h2 class="contacts__title">
-          Остались вопросы? Свяжитесь с нами!
-        </h2>
-        <div class="contacts-item">
-          <h3 class="contacts-item__title">Звоните:</h3>
-          <div class="contacts-item__text">+7 (812) 555-66-66</div>
-        </div>
-        <div class="contacts-item">
-          <h3 class="contacts-item__title">Пишите:</h3>
-          <div class="contacts-item__text">mail@htmlacademy.ru</div>
-        </div>
-        <div class="contacts-item">
-          <h3 class="contacts-item__title">Приезжайте в гости:</h3>
-          <div class="contacts-item__text">ул. Большая Конюшенная, 19/8</div>
+      <div class="container">
+        <div class="contacts">
+          <h2 class="contacts__title">
+            Остались вопросы? Свяжитесь с нами!
+          </h2>
+          <div class="contacts-item">
+            <h3 class="contacts-item__title">Звоните:</h3>
+            <a href="" class="contacts-item__text">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts-item">
+            <h3 class="contacts-item__title">Пишите:</h3>
+            <a href="" class="contacts-item__text">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts-item contacts-item--guest">
+            <h3 class="contacts-item__title">Приезжайте в гости:</h3>
+            <a href="" class="contacts-item__text contacts-item__text--guest">ул. Большая Конюшенная, 19/8</a>
+          </div>
         </div>
       </div>
-      <div class="map"></div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.9800388766773!2d30.348481125028187!3d59.932473393524255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a67ccf54d7%3A0x45d5ecc3a3df5663!2sNevsky+pr.%2C+49%2C+Sankt-Peterburg%2C+Russia%2C+191025!5e0!3m2!1sen!2s!4v1451267788536" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="main-footer__bottom">
+        <div class="logo-bottom-wrap">
+          <a href="" class="logo-bottom"></a>
+        </div>
+        <div class="social">
+          <a href="" class="social__btn social__btn--twitter"></a>
+          <a href="" class="social__btn social__btn--facebook"></a>
+          <a href="" class="social__btn social__btn--youtube"></a>
+        </div>
+        <div class="author">Разработано</div>
+      </div>
     </footer>
-  </div>
   <script src="js/script.min.js"></script>
 </body>
 </html>

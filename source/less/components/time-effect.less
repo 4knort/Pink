@@ -1,0 +1,117 @@
+.time-effect{
+  display: none;
+}
+
+
+@media(min-width: @mobile){
+  .time-effect{
+    display: block;
+    padding-top: 98px;
+    padding-left: 31px;
+    width: 605px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+    &__effect{
+      display: block;
+    }
+    &__image{
+      position: relative;
+      color: @red;
+      float: left;
+      height: 214px;
+      width: 214px;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 79px 0;
+      font-size: 105px;
+      font-weight: bold;
+      border: 11px solid;
+      border-radius: 50%;
+      border-color: @red;
+      margin-top: 24px;
+      &:after{
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: -50px;
+        width: 295px;
+        height: 342px;
+        background: url(../img/timer.svg) no-repeat;
+        background-size: 290px 344px;
+      }
+    }
+    &__wrap{
+      margin: 0 auto;
+    }
+    &__description{
+      width: 300px;
+      float: right;
+    }
+    &__title{
+      font-size: @font-30;
+      width: 180px;
+      font-weight: bold;
+      line-height: 36px;
+      margin-bottom: 9px;
+    }
+    &__text{
+      margin-bottom: 12px;
+    }
+    &__link{
+      color: @red;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .time-effect{
+    margin: 0;
+    width: auto;
+    padding-top: 87px;
+    padding-bottom: 91px;
+    background-color: @grey-f2;
+    &__image{
+      width: 247px;
+      height: 247px;
+      padding: 87px 0;
+      margin-left: 33px;
+      margin-right: 70px;
+      font-size: 120px;
+      border: 13px solid @red;
+      &:after{
+        top: -125px;
+        left: -57px;
+        width: 340px;
+        height: 405px;
+        background-size: 335px 418px;
+      }
+    }
+    &__description{
+      float: left;
+      width: 500px;
+      box-sizing: border-box;
+      padding-left: 13px;
+      padding-top: 45px;
+    }
+    &__title{
+      font-size: @font-30;
+      line-height: @line-30;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 25px;
+    }
+    &__text{
+      font-size: @font-18;
+      line-height: @line-30;
+      margin-bottom: 29px;
+    }
+    &__link{
+      font-size: @font-18;
+      line-height: @line-30;
+    }
+    &__effect{
+      display: inline;
+    }
+  }
+}

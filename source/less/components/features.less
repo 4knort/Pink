@@ -1,0 +1,46 @@
+.features{
+  padding-top: 90px;
+  padding-bottom: 285px;
+  background: url(../img/Iphone-screen-mobile.png) no-repeat 50% bottom, @grey-f2;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom right, white 50%, #f2f2f2 50%);
+  }
+}
+
+@media(min-width: @mobile){
+  .features{
+    padding-right: 24px;
+    padding-top: 73px;
+    padding-bottom: 10px;
+    background: none;
+    background-color: @grey-f2;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      background: url(../img/Iphone-screen-tablet.png) no-repeat;
+      top: 2px;
+      left: 50%;
+      margin-left: -305px;
+      width: 260px;
+      height: 483px;
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .features{
+    padding-top: 347px;
+    padding-bottom: 50px;
+    &:after{
+      display: none;
+    }
+  }
+}
