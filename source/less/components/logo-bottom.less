@@ -1,7 +1,19 @@
 .logo-bottom{
-  display: inline-block;
-  vertical-align: top;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
   width: 145px;
   height: 40px;
   background: url(../img/sprites.png) no-repeat -630px -10px;
+}
+
+@media(min-width: @mobile){
+  .logo-bottom{
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 145px;
+    height: 40px;
+    background: url(../img/sprites.png) no-repeat -630px -10px;
+  }
 }

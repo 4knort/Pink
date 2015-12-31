@@ -1,30 +1,37 @@
+.social{
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  text-align: center;
+  &__btn{
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+    margin-right: 12px;
+    display: inline-block;
+    vertical-align: top;
+    &:last-child{
+      margin-right: 0;
+    }
+    &--twitter{
+      background: url(../img/sprites.png) -1541px 5px no-repeat;
+    }
+    &--facebook{
+      background: url(../img/sprites.png) -372px 2px no-repeat;
+    }
+    &--youtube{
+      background: url(../img/sprites.png) -1577px 5px no-repeat;
+    }
+  }
+}
+
 @media(min-width: @mobile){
   .social{
     width: 33%;
+    margin: 0;
     display: inline-block;
     vertical-align: top;
-    text-align: center;
-    &__btn{
-      display: inline-block;
-      vertical-align: top;
-      width: 45px;
-      height: 45px;
-      background-color: transparent;
-      border: 3px solid #e9ebec;
-      border-radius: 50%;
-      margin-right: 12px;
-      &:last-child{
-        margin-right: 0;
-      }
-      &--twitter{
-        background: url(../img/sprites.png) -1541px 5px no-repeat;
-      }
-      &--facebook{
-        background: url(../img/sprites.png) -372px 2px no-repeat;
-      }
-      &--youtube{
-        background: url(../img/sprites.png) -1577px 5px no-repeat;
-      }
-    }
   }
 }

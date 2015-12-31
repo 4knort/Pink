@@ -1,0 +1,35 @@
+.label-checkbox{
+  padding-left: 60px;
+  font-size: @font-18;
+  line-height: @line-30;
+  color: @blue;
+  position: relative;
+  &:before{
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid @border-e5;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 13px;
+    border-right: 2px solid @red;
+    border-bottom: 2px solid @red;
+    transform: rotate(45deg);
+    background-color: transparent;
+    width: 10px;
+    height: 20px;
+  }
+}
+
+.form-checkbox:checked + .label-checkbox:after{
+  display: block;
+}
+.form-checkbox + .label-checkbox:after{
+  display: none;
+}

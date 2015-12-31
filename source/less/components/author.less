@@ -1,23 +1,34 @@
+.author{
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: @blue;
+  font-size: 14px;
+  padding-top: 18px;
+  padding-right: 45px;
+  position: relative;
+  &__link{
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: 39px;
+    width: 27px;
+    height: 34px;
+    background: url(../img/sprites.png) no-repeat -202px -10px;
+  }
+}
+
+
+
+
 @media(min-width: @mobile){
   .author{
     width: 33%;
     display: inline-block;
     vertical-align: top;
     text-align: right;
-    color: @blue;
-    font-size: 14px;
-    padding-top: 18px;
     padding-right: 75px;
     box-sizing: border-box;
-    position: relative;
-    &:after{
-      content: "";
-      position: absolute;
-      top: 15px;
-      right: 33px;
-      width: 27px;
-      height: 34px;
-      background: url(../img/sprites.png) no-repeat -202px -10px;
-    }
   }
 }

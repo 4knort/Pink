@@ -1,0 +1,35 @@
+.label-radio{
+  font-size: @font-18;
+  line-height: @line-30;
+  color: @blue;
+  padding-left: 60px;
+  position: relative;
+  cursor: pointer;
+  &:before{
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid @border-e5;
+  }
+  &:after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: @red;
+  }
+}
+
+.form-radio:checked + .label-radio:after{
+  display: block;
+}
+.form-radio + .label-radio:after{
+  display: none;
+}
