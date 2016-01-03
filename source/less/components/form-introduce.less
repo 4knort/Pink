@@ -16,3 +16,34 @@
     }
   }
 }
+
+@media(min-width: @mobile){
+  .form-introduce{
+    padding: 0;
+    padding-top: 92px;
+    padding-bottom: 45px;
+    &__title{
+      width: 530px;
+      margin-bottom: 39px;
+      font-size: @font-18;
+      line-height: @line-30;
+      &-description{
+        display: block;
+      }
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .form-introduce{
+    font-size: 0;
+    padding-bottom: 42px;
+    &__title{
+      width: 760px;
+      margin-bottom: 66px;
+      &-description{
+        display: inline;
+      }
+    }
+  }
+}

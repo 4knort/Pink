@@ -1,6 +1,6 @@
 .form-amount{
   background-color: @grey-f2;
-  padding-top: 32px;
+  padding-top: 36px;
   padding-bottom: 25px;
   &__number{
     float: left;
@@ -15,5 +15,70 @@
   &__item-description{
     float: left;
     width: 215px;
+  }
+  &__delete{
+    display: none;
+  }
+}
+
+@media(min-width: @mobile){
+  .form-amount{
+    padding: 0 10px;
+    padding-top: 44px;
+    padding-bottom: 33px;
+    margin-bottom: 65px;
+    position: relative;
+    border: 1px solid @border-e5;
+    background-color: #fff;
+    &__item{
+      padding-left: 29px;
+      position: relative;
+    }
+    &__delete{
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: 25px;
+      text-transform: uppercase;
+      color: @blue;
+      &:hover{
+        color: @red;
+        text-decoration: underline;
+      }
+      &:active{
+        opacity: 0.3;
+        text-decoration: none;
+      }
+    }
+    &__number{
+      margin-right: 18px;
+    }
+    &__item-description{
+      width: 55%;
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .form-amount{
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    &__item{
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    &__number{
+      margin-right: 0;
+    }
+    &__item-description{
+      float: none;
+      width: auto;
+      margin-left: 85px;
+    }
+    &__delete{
+      right: 0;
+    }
   }
 }

@@ -36,7 +36,7 @@
     width: 130px;
     height: 15px;
     position: absolute;
-    bottom: 30px;
+    bottom: 15px;
     left: 50%;
     margin-left: -75px;
     font-size: 0;
@@ -46,11 +46,18 @@
       width: 6px;
       height: 6px;
       border-radius: 3px;
-      background-color: #bec2c7;
+      background-color: @blue;
+      opacity: 0.3;
       margin-right: 10px;
       cursor: pointer;
       &:last-child{
         margin-right: 0;
+      }
+      &:hover{
+        opacity: 0.6;
+      }
+      &:active{
+        opacity: 0.1;
       }
     }
     &-active{
@@ -69,6 +76,9 @@
 
 @media(min-width: @mobile){
   .slider-reviews{
+    &__controls{
+      bottom: 30px;
+    }
     &__title{
       width: 500px;
       font-size: 20px;
@@ -118,10 +128,17 @@
       width: 30px;
       height: 30px;
       transform: rotate(-45deg);
-      border-right: 2px solid #c2c6ca;
-      border-bottom: 2px solid #c2c6ca;
+      border-right: 2px solid @blue;
+      border-bottom: 2px solid @blue;
+      opacity: 0.3;
       display: block;
       cursor: pointer;
+      &:hover{
+        opacity: 0.6;
+      }
+      &:active{
+        opacity: 0.1;
+      }
     }
     &__arrow-left{
       position: absolute;
@@ -131,10 +148,17 @@
       width: 30px;
       height: 30px;
       transform: rotate(135deg);
-      border-right: 2px solid #c2c6ca;
-      border-bottom: 2px solid #c2c6ca;
+      border-right: 2px solid @blue;
+      border-bottom: 2px solid @blue;
+      opacity: 0.3;
       display: block;
       cursor: pointer;
+      &:hover{
+        opacity: 0.6;
+      }
+      &:active{
+        opacity: 0.1;
+      }
     }
     &__title{
       font-size: @font-24;

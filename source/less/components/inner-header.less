@@ -1,6 +1,7 @@
 .inner-header{
   height: 237px;
-  background: url(../img/background-top.jpg) no-repeat -460px -110px;
+  background: url(../img/background-top.jpg) no-repeat ;
+  background-size: cover;
   &__title{
     font-size: 24px;
     line-height: 28px;
@@ -10,5 +11,29 @@
     text-align: center;
     font-weight: 300;
     color: #fff;
+  }
+}
+
+@media(min-width: @mobile){
+  .inner-header{
+    height: 440px;
+    background: url(../img/background-top.jpg)  no-repeat;
+    background-size: cover;
+    &__title{
+      font-size: @font-50;
+      line-height: 60px;
+      width: 480px;
+      padding-top: 71px;
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .inner-header{
+    height: 394px;
+    &__title{
+      padding-top: 63px;
+      width: 770px;
+    }
   }
 }

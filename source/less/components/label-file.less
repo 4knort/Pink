@@ -13,4 +13,18 @@
   font-size: @font-18;
   line-height: @line-30;
   text-transform: uppercase;
+  &:hover{
+    border-color: @blue;
+  }
+  &:active{
+    background-color: @blue;
+    color: #fff;
+  }
+}
+
+@media(min-width: @mobile){
+  .label-file{
+    width: 93%;
+    margin-bottom: 100px;
+  }
 }

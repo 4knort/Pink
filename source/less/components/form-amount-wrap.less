@@ -11,3 +11,23 @@
     background-color: @border-e5;
   }
 }
+
+@media(min-width: @mobile){
+  .form-amount-wrap{
+    &:before{
+      width: 90%;
+      left: 19px;
+      top: 105px;
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .form-amount-wrap{
+    padding: 0;
+    &:before{
+      width: 100%;
+      left: 0;
+    }
+  }
+}

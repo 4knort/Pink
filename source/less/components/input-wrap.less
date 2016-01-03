@@ -1,3 +1,43 @@
 .input-wrap{
   margin-bottom: 20px;
 }
+
+@media(min-width: @mobile){
+  .input-wrap{
+    &--amount{
+      width: 100%;
+    }
+    &--date{
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0 10px;
+      &:nth-child(odd){
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .input-wrap{
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    &--date{
+      width: 40%;
+      padding: 0 4px;
+      &-desktop{
+        width: 30%;
+      }
+    }
+    &--amount{
+      display: inline-block;
+      vertical-align: top;
+      width: 42%;
+    }
+  }
+}

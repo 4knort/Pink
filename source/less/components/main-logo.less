@@ -6,6 +6,12 @@
   margin-left: 19px;
   margin-top: 21px;
   background: url(../img/sprites.png) no-repeat -1195px -26px;
+  &:hover{
+    background-position: -1360px -26px;
+  }
+  &:active{
+    background-position: -1030px -26px;
+  }
 }
 
 @media(min-width: @mobile){
@@ -15,6 +21,13 @@
     width: 145px;
     height: 40px;
     background: url(../img/sprites.png) no-repeat -1125px -10px;
+    &:hover{
+      background-position: -1290px -10px;
+    }
+    &:active{
+      background-position: -1125px -10px;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -22,7 +35,7 @@
   .main-logo{
     display: block;
     float: left;
-    margin-left: 5%;
+    margin-left: 11%;
     width: 160px;
   }
 }

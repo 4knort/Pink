@@ -4,6 +4,7 @@
   line-height: @line-30;
   color: @blue;
   position: relative;
+  cursor: pointer;
   &:before{
     content: "";
     position: absolute;
@@ -25,6 +26,12 @@
     width: 10px;
     height: 20px;
   }
+  &:hover:before{
+    border-color: @blue;
+  }
+  &:active:before{
+    border-color: @red;
+  }
 }
 
 .form-checkbox:checked + .label-checkbox:after{
@@ -32,4 +39,10 @@
 }
 .form-checkbox + .label-checkbox:after{
   display: none;
+}
+
+@media(min-width: @tablet){
+  .label-checkbox{
+    padding-left: 45px;
+  }
 }

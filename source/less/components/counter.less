@@ -2,23 +2,34 @@
   font-size: 0;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 13px;
+  margin-bottom: 9px;
   &--amount{
-    margin-bottom: 84px;
+    margin-bottom: 81px;
   }
   &__btn{
-    width: 56px;
-    height: 56px;
+    width: 60px;
+    height: 60px;
     border: 2px solid @border-e5;
     display: inline-block;
     vertical-align: top;
     position: relative;
+    &:hover{
+      border-color: @blue;
+    }
+    &:active{
+      border-color: @blue;
+      background-color: @blue;
+    }
+    &:active:before,
+    &:active:after{
+      background-color: #fff;
+    }
     &--minus{
       &:after{
         content: "";
         position: absolute;
         top: 27px;
-        left: 14px;
+        left: 15px;
         width: 27px;
         height: 3px;
         background-color: @blue;
@@ -29,7 +40,7 @@
         content: "";
         position: absolute;
         top: 27px;
-        left: 14px;
+        left: 16px;
         width: 27px;
         height: 3px;
         background-color: @blue;
@@ -38,7 +49,7 @@
         content: "";
         position: absolute;
         top: 15px;
-        left: 26px;
+        left: 28px;
         width: 3px;
         height: 27px;
         background-color: @blue;
@@ -55,7 +66,29 @@
     outline: none;
     border-top: 2px solid @border-e5;
     border-bottom: 2px solid @border-e5;
-    padding: 13px 20px;
+    padding: 15px 16px;
     width: 120px;
+  }
+}
+
+@media(min-width: @mobile){
+  .counter{
+    width: 100%;
+    text-align: center;
+    &__input{
+      padding: 15px 0;
+    }
+    &--amount{
+      text-align: left;
+      margin-bottom: 74px;
+    }
+  }
+}
+
+@media(min-width: @tablet){
+  .counter{
+    &--amount{
+      margin-bottom: 47px;
+    }
   }
 }

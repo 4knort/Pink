@@ -91,7 +91,7 @@ module.exports = function(grunt){
 
     concat: {
       dist: {
-        src: ["source/js/script.js"],
+        src: ["source/js/script.js", "source/js/mustache.js"],
         dest: "build/js/script.js"
       }
     },
@@ -112,7 +112,7 @@ grunt.registerTask("build", [
     "cmq",
     "postcss",
     "cssmin",
-    // "imagemin",
+    "imagemin",
     "concat",
     "uglify"
   ]);

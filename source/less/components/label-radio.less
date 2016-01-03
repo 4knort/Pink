@@ -25,11 +25,17 @@
     border-radius: 50%;
     background-color: @red;
   }
+  &:hover:before{
+    border-color: @blue;
+  }
+  &:active:before{
+    border-color: @red;
+  }
 }
 
+.form-radio + .label-radio:after{
+  display: none;
+}
 .form-radio:checked + .label-radio:after{
   display: block;
 }
-.form-radio + .label-radio:after{
-  display: none;
-}
