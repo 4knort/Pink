@@ -9,6 +9,10 @@ var travelersNumber = document.querySelector(".form-number");
 var travelerPlus = document.querySelector(".counter__btn--plus-traveler");
 var travelerMinus = document.querySelector(".counter__btn--minus-traveler");
 
+
+
+
+
 menuBtn.addEventListener("click", function(event){
   event.preventDefault();
   menuBtn.classList.toggle("navigation-button-close");
@@ -30,6 +34,18 @@ for(i=0; i<plus.length; i++){
 
 travelerPlus.addEventListener("click", function(){
   addTraveler();
+
+  var deleteBtn = document.querySelectorAll(".form-amount__delete");
+
+  for(z=0; z<deleteBtn.length; z++){
+    deleteBtn[z].addEventListener("click", function(event){
+      event.preventDefault();
+      var el = event.target;
+      var parent = el.parentNode;
+      parent.parentNode.removeChild(parent);
+      counterInput.value = parseInt(counterInput.value) - 1;
+    })
+  }
 })
 travelerMinus.addEventListener("click", function(){
   delTraveler();
